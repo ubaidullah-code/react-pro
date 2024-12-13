@@ -9,7 +9,7 @@ import NavBar from "./components/NavBar"
 
 
 const App = () => {
-  const [count , setCount] = useState(1)
+  const [count , setCount] = useState(0)
 
   const updateState = () =>{
     setCount(count + 1)

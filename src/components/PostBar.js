@@ -5,8 +5,8 @@ const PostBar = () => {
   
     const [data , setdata] = useState([
         {FirstName : "Ubaid", lastName : "Ullah" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
-        {FirstName : "Qadir", lastName : "Ullah" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
-        {FirstName : "Tabish", lastName : "Ullah" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
+        {FirstName : "Qadir" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
+        {FirstName : "Tabish" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
         {FirstName : "Abdullah" , profileImage: "https://image.shutterstock.com/image-photo/great-nature-scenery-slovenian-alps-260nw-2526651305.jpg", postTime : "12-dec-2024"},
     ])
     const [dataFun , setdataFun] = useState([
@@ -22,7 +22,7 @@ return (
      <div>
       {data.map((ele , i) => {
         return(
-          <Post key={i} name={ele.FirstName} lastName={ele.lastName} time={ele.postTime} imgUrl={ele.profileImage} />
+          <Post key={i} name={ele.FirstName} lastName={ele.lastName} imgUrl={ele.profileImage} time={ele.postTime}  />
         )
       })}
     
